@@ -10,7 +10,7 @@ import spacy
 from spellchecker import SpellChecker
 app = Flask(__name__)
 app.config['DEBUG'] = True
-CORS(app)
+CORS(app ,resources={r"/*": {"origins": "https://beecoders-job.vercel.app"}})
 # Charger le modèle spaCy multilingue
 nlp_multilingue = spacy.load("xx_ent_wiki_sm")
 
