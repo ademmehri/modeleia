@@ -336,6 +336,6 @@ def evaluate_answer_api():
     
     return jsonify(response)
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
+def create():
+    if __name__ == '__main__':
+        app.run(debug=True)
